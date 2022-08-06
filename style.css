@@ -1,0 +1,170 @@
+:root {
+  /* CSS Background color custom properties */
+  --colorbg-header: linear-gradient(
+      90deg,
+      hsl(13, 100%, 72%) 0%,
+      hsl(353, 100%, 62%) 100%
+    ),
+    url(images/bg-pattern-intro-desktop.svg);
+  --colorbg-body: linear-gradient(
+    90deg,
+    hsl(237, 17%, 21%) 0%,
+    hsl(237, 23%, 32%) 100%
+  );
+  --colorbg-footer: hsl(240, 10%, 16%);
+  --colorbg-cta: hsl(356, 100%, 66%);
+
+  /* CSS text color custom properties */
+  --colorcta: hsl(356, 100%, 66%);
+  --hoverbg: hsl(355, 100%, 74%);
+  --colorheadings: hsl(208, 49%, 24%);
+
+  /* CSS font family custom properties */
+  --ff-primary: "Ubuntu", sans-serif;
+  --ff-secondary: "Overpass", sans-serif;
+
+  /* Neutral */
+  --color-txt: hsl(0, 0%, 100%);
+  --colorfootertxt: hsl(240, 2%, 79%);
+  --colorbody-copy: hsl(207, 13%, 34%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  /* font-weight: 600; */
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* -------- UTILITY CLASSES ------------------ */
+.bg-header {
+  background: var(--colorbg-header);
+  border-radius: 0rem 0rem 0rem 4rem;
+}
+
+.bg-body {
+  background: var(--colorbg-body);
+  border-radius: 0rem 5rem 0rem 5rem;
+}
+
+.bg-footer {
+  background: var(--colorbg-footer);
+}
+
+.text-white {
+  color: var(--color-txt);
+}
+
+.bg-whitehover:hover {
+  background-color: #fff;
+}
+
+.bg-colorctahover:hover {
+  background: var(--hoverbg) !important;
+}
+
+.txt-cta:hover {
+  color: var(--colorcta) !important;
+}
+
+.txt-ctahover:hover {
+  color: var(--color-txt) !important;
+}
+
+.bg-hover:hover {
+  background: var(--hoverbg);
+}
+
+.headings-color {
+  color: hsl(208, 49%, 24%);
+}
+
+.ff-primary {
+  color: var(--ff-primary);
+}
+
+.ff-secondary {
+  color: var(--ff-secondary);
+}
+
+.footer-text-white {
+  color: var(--colorfootertxt);
+}
+
+.bgcolor-copy {
+  color: var(--colorbody-copy);
+}
+
+.fw-bolder {
+  letter-spacing: 0.0625rem;
+}
+
+.footer-subel {
+  text-decoration: none !important;
+  color: var(--color-txt) !important;
+}
+
+.dropdown-item {
+  white-space: inherit;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+.brand {
+  letter-spacing: 0.0625rem;
+  font-size: 1.6rem;
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+section {
+  padding: 3rem;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (max-width: 577px) {
+  .text-sm-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .mb-responsive {
+    margin-bottom: -10rem;
+  }
+}
