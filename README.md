@@ -1,4 +1,4 @@
-![image](https://github.com/Kafolabi/blogr/assets/68921584/f0c7f564-ad5e-4248-9617-abab10dd30dd)# Frontend Mentor - Blogr landing page
+# Frontend Mentor - Blogr landing page
 
 ## Project Overview
 
