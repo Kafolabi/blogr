@@ -25,18 +25,18 @@ You can view this project live at: https://blogr-fictional.netlify.app/
 
 This project is part of my personal portfolio site, which showcases my skills and experience as a developer. You can explore more projects like this at: https://stephen-afolabi.netlify.app/
 
-License
+## License
 
 This project is licensed under the MIT License.
 
-Author
+## Author
 
 Stephen Afolabi
 
-Acknowledgments
+## Acknowledgments
 
 Thanks to Front End Mentor for providing the challenge and design template. Also, thanks to the Bootstrap, HTML, CSS, and JavaScript communities for their hard work and dedication to open-source software.
 
-Contributing
+## Contributing
 
 If you find any issues or want to contribute to this project, please feel free to open a pull request or issue.
